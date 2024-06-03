@@ -88,7 +88,7 @@ const CreatePodcastPage = () => {
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className="input-class focus-visible:ring-orange-1"
+                      className="input-class focus-visible:ring-offset-orange-1"
                       placeholder="Pro Podcast"
                       {...field}
                     />
@@ -113,7 +113,7 @@ const CreatePodcastPage = () => {
                     className="placeholder:text-gray-1"
                   />
                 </SelectTrigger>
-                <SelectContent className="text-16 border-none bg-black-1 font-bold text-white-1 focus:ring-orange-1">
+                <SelectContent className="text-16 border-none bg-black-1 font-bold text-white-1 focus:ring-offset-orange-1">
                   {voiceCategories.map((category) => (
                     <SelectItem
                       key={category}
@@ -140,7 +140,7 @@ const CreatePodcastPage = () => {
                   </FormLabel>
                   <FormControl>
                     <Textarea
-                      className="input-class focus-visible:ring-orange-1"
+                      className="input-class focus-visible:ring-offset-orange-1"
                       placeholder="Write a short podcast description"
                       {...field}
                     />
@@ -152,7 +152,15 @@ const CreatePodcastPage = () => {
           </div>
 
           <div className="flex flex-col pt-10">
-            <GeneratePodcast />
+            <GeneratePodcast
+              setAudioStorageId={setAudioStorageId}
+              setAudio={setAudioUrl}
+              voiceType={voiceType}
+              audio={audioUrl}
+              voicePrompt={voicePrompt}
+              setVoicePrompt={setVoicePrompt}
+              setAudioDuration={setAudioDuration}
+            />
             <GenerateThumbnail />
 
             <div className="mt-10 w-full">
