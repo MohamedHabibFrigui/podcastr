@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className="text-20 font-bold text-white-1">Trending Podcasts</h1>
 
         <div className="podcast_grid">
-          {/* {podcastData.map(({ id, title, description, imgURL }) => (
+          {podcastData.map(({ id, title, description, imgURL }) => (
             <PodcastCard
               key={id}
               imgUrl={imgURL}
@@ -23,8 +23,8 @@ export default function Home() {
               description={description}
               podcastId={id}
             />
-          ))} */}
-          {trendingPodcasts?.map(
+          ))}
+          {/* {trendingPodcasts?.map(
             ({ _id, podcastTitle, podcastDescription, imageUrl }) => (
               <PodcastCard
                 key={_id}
@@ -34,7 +34,7 @@ export default function Home() {
                 podcastId={_id}
               />
             )
-          )}
+          )} */}
         </div>
       </section>
     </div>
