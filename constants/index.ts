@@ -101,3 +101,62 @@ export const singlePodcastData = {
   audioDuration: 0,
   views: 2,
 };
+
+export const topPodcastersData = [
+  {
+    totalPodcasts: 5,
+    podcast: [
+      { podcastTitle: "Tech Talks", pocastId: "podcast1" as Id<"podcasts"> },
+      { podcastTitle: "Future Trends", pocastId: "podcast2" as Id<"podcasts"> },
+      {
+        podcastTitle: "Innovative Ideas",
+        pocastId: "podcast3" as Id<"podcasts">,
+      },
+    ],
+    _id: "user1" as Id<"users">,
+    _creationTime: 1625128800000,
+    imageUrl:
+      "https://lovely-flamingo-139.convex.cloud/api/storage/16fbf9bd-d800-42bc-ac95-d5a586447bf6",
+    email: "user1@example.com",
+    clerkId: "clerk1",
+    name: "Alice Johnson",
+  },
+  {
+    totalPodcasts: 3,
+    podcast: [
+      {
+        podcastTitle: "Health Matters",
+        pocastId: "podcast4" as Id<"podcasts">,
+      },
+      { podcastTitle: "Fitness First", pocastId: "podcast5" as Id<"podcasts"> },
+    ],
+    _id: "user2" as Id<"users">,
+    _creationTime: 1627831200000,
+    imageUrl:
+      "https://lovely-flamingo-139.convex.cloud/api/storage/ca7cb1a6-4919-4b2c-a73e-279a79ac6d23",
+    email: "user2@example.com",
+    clerkId: "clerk2",
+    name: "Bob Smith",
+  },
+  {
+    totalPodcasts: 4,
+    podcast: [
+      {
+        podcastTitle: "Finance Fundamentals",
+        pocastId: "podcast6" as Id<"podcasts">,
+      },
+      {
+        podcastTitle: "Investment Insights",
+        pocastId: "podcast7" as Id<"podcasts">,
+      },
+      { podcastTitle: "Market Moves", pocastId: "podcast8" as Id<"podcasts"> },
+    ],
+    _id: "user3" as Id<"users">,
+    _creationTime: 1630459200000,
+    imageUrl:
+      "https://lovely-flamingo-139.convex.cloud/api/storage/221ee4bd-435f-42c3-8e98-4a001e0d806e",
+    email: "user3@example.com",
+    clerkId: "clerk3",
+    name: "Charlie Brown",
+  },
+];

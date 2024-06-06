@@ -53,3 +53,21 @@ export interface PodcastDetailPlayerProps {
   authorImageUrl: string;
   authorId: string;
 }
+
+export interface TopPodcastersProps {
+  _id: Id<"users">;
+  _creationTime: number;
+  email: string;
+  imageUrl: string;
+  clerkId: string;
+  name: string;
+  podcast: {
+    podcastTitle: string;
+    pocastId: Id<"podcasts">;
+  }[];
+  totalPodcasts: number;
+}
+
+export interface CarouselProps {
+  fansLikeDetail: TopPodcastersProps[];
+}
